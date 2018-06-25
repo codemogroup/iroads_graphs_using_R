@@ -1,0 +1,15 @@
+"0","#moving average acceY"
+"0","library(""pracma"")"
+"0","vector_movavg_acceY <- movavg(vector_acceY, 5, type=c(""s""))"
+"0","time_movavg_acceY = data.frame(time = vector_time, movavg_acceY = vector_movavg_acceY)"
+"0","#ggplot(time_movavg_acceY, aes(x = time))+"
+"0","#  geom_line(aes(y=movavg_acceY))"
+"0","plot_ly(time_movavg_acceY, x = ~time, y = ~movavg_acceY, type = ""area"")"
+"2","'area' objects don't have these attributes: 'x', 'y'
+Valid attributes include:
+'type', 'visible', 'showlegend', 'legendgroup', 'opacity', 'name', 'uid', 'ids', 'customdata', 'hoverinfo', 'hoverlabel', 'stream', 'r', 't', 'marker', 'idssrc', 'customdatasrc', 'hoverinfosrc', 'rsrc', 'tsrc', 'key', 'set', 'frame', 'transforms', '_isNestedKey', '_isSimpleKey', '_isGraticule'
+"
+"2","'area' objects don't have these attributes: 'x', 'y'
+Valid attributes include:
+'type', 'visible', 'showlegend', 'legendgroup', 'opacity', 'name', 'uid', 'ids', 'customdata', 'hoverinfo', 'hoverlabel', 'stream', 'r', 't', 'marker', 'idssrc', 'customdatasrc', 'hoverinfosrc', 'rsrc', 'tsrc', 'key', 'set', 'frame', 'transforms', '_isNestedKey', '_isSimpleKey', '_isGraticule'
+"

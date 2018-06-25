@@ -1,0 +1,30 @@
+"0","library(plotly)"
+"2","
+Attaching package: ‘plotly’
+
+"
+"2","The following object is masked from ‘package:ggplot2’:
+
+    last_plot
+
+"
+"2","The following object is masked from ‘package:stats’:
+
+    filter
+
+"
+"2","The following object is masked from ‘package:graphics’:
+
+    layout
+
+"
+"0","p <- plot_ly(time_accY, x = ~time, y = ~acceY, type = ""area"")"
+"0","p"
+"2","'area' objects don't have these attributes: 'x', 'y'
+Valid attributes include:
+'type', 'visible', 'showlegend', 'legendgroup', 'opacity', 'name', 'uid', 'ids', 'customdata', 'hoverinfo', 'hoverlabel', 'stream', 'r', 't', 'marker', 'idssrc', 'customdatasrc', 'hoverinfosrc', 'rsrc', 'tsrc', 'key', 'set', 'frame', 'transforms', '_isNestedKey', '_isSimpleKey', '_isGraticule'
+"
+"2","'area' objects don't have these attributes: 'x', 'y'
+Valid attributes include:
+'type', 'visible', 'showlegend', 'legendgroup', 'opacity', 'name', 'uid', 'ids', 'customdata', 'hoverinfo', 'hoverlabel', 'stream', 'r', 't', 'marker', 'idssrc', 'customdatasrc', 'hoverinfosrc', 'rsrc', 'tsrc', 'key', 'set', 'frame', 'transforms', '_isNestedKey', '_isSimpleKey', '_isGraticule'
+"

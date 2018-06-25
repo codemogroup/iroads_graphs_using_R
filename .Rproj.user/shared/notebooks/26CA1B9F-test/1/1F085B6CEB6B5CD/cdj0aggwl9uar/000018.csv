@@ -1,0 +1,11 @@
+"0","library(plotly)"
+"0","p <- plot_ly(time_accY, x = ~time, y = ~acceY, type = ""area"")"
+"0","p"
+"2","'area' objects don't have these attributes: 'x', 'y'
+Valid attributes include:
+'type', 'visible', 'showlegend', 'legendgroup', 'opacity', 'name', 'uid', 'ids', 'customdata', 'hoverinfo', 'hoverlabel', 'stream', 'r', 't', 'marker', 'idssrc', 'customdatasrc', 'hoverinfosrc', 'rsrc', 'tsrc', 'key', 'set', 'frame', 'transforms', '_isNestedKey', '_isSimpleKey', '_isGraticule'
+"
+"2","'area' objects don't have these attributes: 'x', 'y'
+Valid attributes include:
+'type', 'visible', 'showlegend', 'legendgroup', 'opacity', 'name', 'uid', 'ids', 'customdata', 'hoverinfo', 'hoverlabel', 'stream', 'r', 't', 'marker', 'idssrc', 'customdatasrc', 'hoverinfosrc', 'rsrc', 'tsrc', 'key', 'set', 'frame', 'transforms', '_isNestedKey', '_isSimpleKey', '_isGraticule'
+"

@@ -1,0 +1,15 @@
+"0","#first order derivative acceY"
+"0","vector_d_acceYd_Time1 <- diff(vector_acceY_raw)/(diff(vector_time/1000))"
+"0","vector_d_acceYd_Time <- append(0, vector_d_acceYd_Time1)"
+"0","time_d_acceYd_Time = data.frame(time = vector_time, d_acceYd_Time = vector_d_acceYd_Time)"
+"0","#ggplot(time_d_acceYd_Time, aes(x = time))+"
+"0","#  geom_line(aes(y=d_acceYd_Time))"
+"0","plot_ly(time_d_acceYd_Time, x = ~time, y = ~d_acceYd_Time, type = ""area"")"
+"2","'area' objects don't have these attributes: 'x', 'y'
+Valid attributes include:
+'type', 'visible', 'showlegend', 'legendgroup', 'opacity', 'name', 'uid', 'ids', 'customdata', 'hoverinfo', 'hoverlabel', 'stream', 'r', 't', 'marker', 'idssrc', 'customdatasrc', 'hoverinfosrc', 'rsrc', 'tsrc', 'key', 'set', 'frame', 'transforms', '_isNestedKey', '_isSimpleKey', '_isGraticule'
+"
+"2","'area' objects don't have these attributes: 'x', 'y'
+Valid attributes include:
+'type', 'visible', 'showlegend', 'legendgroup', 'opacity', 'name', 'uid', 'ids', 'customdata', 'hoverinfo', 'hoverlabel', 'stream', 'r', 't', 'marker', 'idssrc', 'customdatasrc', 'hoverinfosrc', 'rsrc', 'tsrc', 'key', 'set', 'frame', 'transforms', '_isNestedKey', '_isSimpleKey', '_isGraticule'
+"

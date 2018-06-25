@@ -1,0 +1,30 @@
+"0","p1 <- plot_ly(time_d_acceYd_Time, x = ~time, y = ~d_acceYd_Time, type = ""area"") %>%"
+"0","  add_lines(name = ~""1stderivative"")"
+"0","p2 <- plot_ly(time_accY, x = ~time, y = ~acceY, type = ""area"") %>%"
+"0","  add_lines(name = ~""acceY"")"
+"0","p <- subplot(p1, p2)"
+"2","'area' objects don't have these attributes: 'x', 'y'
+Valid attributes include:
+'type', 'visible', 'showlegend', 'legendgroup', 'opacity', 'name', 'uid', 'ids', 'customdata', 'hoverinfo', 'hoverlabel', 'stream', 'r', 't', 'marker', 'idssrc', 'customdatasrc', 'hoverinfosrc', 'rsrc', 'tsrc', 'key', 'set', 'frame', 'transforms', '_isNestedKey', '_isSimpleKey', '_isGraticule'
+"
+"2","'area' objects don't have these attributes: 'x', 'y'
+Valid attributes include:
+'type', 'visible', 'showlegend', 'legendgroup', 'opacity', 'name', 'uid', 'ids', 'customdata', 'hoverinfo', 'hoverlabel', 'stream', 'r', 't', 'marker', 'idssrc', 'customdatasrc', 'hoverinfosrc', 'rsrc', 'tsrc', 'key', 'set', 'frame', 'transforms', '_isNestedKey', '_isSimpleKey', '_isGraticule'
+"
+"0","p"
+"2","'area' objects don't have these attributes: 'x', 'y', 'xaxis', 'yaxis'
+Valid attributes include:
+'type', 'visible', 'showlegend', 'legendgroup', 'opacity', 'name', 'uid', 'ids', 'customdata', 'hoverinfo', 'hoverlabel', 'stream', 'r', 't', 'marker', 'idssrc', 'customdatasrc', 'hoverinfosrc', 'rsrc', 'tsrc', 'key', 'set', 'frame', 'transforms', '_isNestedKey', '_isSimpleKey', '_isGraticule'
+"
+"2","'area' objects don't have these attributes: 'x', 'y', 'xaxis', 'yaxis'
+Valid attributes include:
+'type', 'visible', 'showlegend', 'legendgroup', 'opacity', 'name', 'uid', 'ids', 'customdata', 'hoverinfo', 'hoverlabel', 'stream', 'r', 't', 'marker', 'idssrc', 'customdatasrc', 'hoverinfosrc', 'rsrc', 'tsrc', 'key', 'set', 'frame', 'transforms', '_isNestedKey', '_isSimpleKey', '_isGraticule'
+"
+"2","'area' objects don't have these attributes: 'x', 'y', 'xaxis', 'yaxis'
+Valid attributes include:
+'type', 'visible', 'showlegend', 'legendgroup', 'opacity', 'name', 'uid', 'ids', 'customdata', 'hoverinfo', 'hoverlabel', 'stream', 'r', 't', 'marker', 'idssrc', 'customdatasrc', 'hoverinfosrc', 'rsrc', 'tsrc', 'key', 'set', 'frame', 'transforms', '_isNestedKey', '_isSimpleKey', '_isGraticule'
+"
+"2","'area' objects don't have these attributes: 'x', 'y', 'xaxis', 'yaxis'
+Valid attributes include:
+'type', 'visible', 'showlegend', 'legendgroup', 'opacity', 'name', 'uid', 'ids', 'customdata', 'hoverinfo', 'hoverlabel', 'stream', 'r', 't', 'marker', 'idssrc', 'customdatasrc', 'hoverinfosrc', 'rsrc', 'tsrc', 'key', 'set', 'frame', 'transforms', '_isNestedKey', '_isSimpleKey', '_isGraticule'
+"
