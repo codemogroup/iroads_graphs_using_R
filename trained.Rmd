@@ -1,0 +1,80 @@
+---
+title: "Graphs2"
+author: "Uwin Abeywikrama"
+date: "July 3, 2018"
+output: html_document
+---
+
+```{r}
+library("rjson")
+json_file1 <- "..//iRoads_Anomaly_Detection_using_Machine_Learning//iRoads_Machine_Learning//Prediction//j7Uduwila2PotholeModel.json"
+json_data1 <- fromJSON(file=json_file1)
+
+json_file_anomaly_tag <- "..//iRoads-Pre-Processing//output//from_json//raw//j7uduwila2.json"
+json_data_anaomaly <- fromJSON(file=json_file_anomaly_tag)
+
+vector_acceY <- numeric()
+vector_acceY_raw <- numeric()
+vector_time <- numeric()
+vector_anomaly <- numeric()
+vector_anomaly_tags <- numeric()
+
+# vector_anomalyTimes <- c(1530858189559, 1530858190359, 1530858194360, 1530858195359, 1530858205179, 1530858205979, 1530858216399,
+#                  1530858217099, 1530858220607, 1530858222019, 1530858232136, 1530858233140, 1530858267293, 1530858267900)
+
+for (item in json_data_anaomaly){
+  
+   if(item$anomaly != "N"){
+    vector_anomaly_tags <- c(vector_anomaly_tags, 1)
+   }
+  else{
+     vector_anomaly_tags <- c(vector_anomaly_tags, 0)
+  }
+}
+
+
+
+for (item in json_data1){
+ 
+  # if(is.element(item$time, vector_anomalyTimes)){
+  #   vector_anomaly_tags <- c(vector_anomaly_tags, 1)
+  # }
+  # else{
+  #    vector_anomaly_tags <- c(vector_anomaly_tags, 0)
+  # }
+  
+  vector_acceY <- c(vector_acceY, item$acceY)
+  vector_time <- c(vector_time, item$time)
+  
+  if(item$anomaly == "N"){
+     vector_anomaly<-c(vector_anomaly, 0)
+    
+  }
+  else if(item$anomaly == "P"){
+    vector_anomaly<-c(vector_anomaly, 2)
+  }
+  else{
+    vector_anomaly<-c(vector_anomaly, 1)
+  }
+  
+  
+}
+
+
+```
+```{r}
+library(plotly)
+time_accY = data.frame(time = vector_time, acceY = vector_acceY)
+time_anomaly = data.frame(time = vector_time, anomaly = vector_anomaly)
+time_anomaly_tag = data.frame(time = vector_time, anomaly_tag = vector_anomaly_tags)
+theme_set(theme_classic())
+p1 <- plot_ly(time_accY, x = ~time, y = ~acceY, type = "area") %>%
+  add_lines(name = ~"acceY")
+p2 <- plot_ly(time_anomaly, x = ~time, y = ~anomaly, type = "bar") %>%
+  add_lines(name = ~"Anomaly_predicted")
+p3 <- plot_ly(time_anomaly_tag, x = ~time, y = ~anomaly_tag, type = "bar") %>%
+  add_lines(name = ~"Anomaly_tag")
+p <- subplot(p1, p2, p3, nrows = 3,shareX = TRUE)
+p
+```
+
